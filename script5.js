@@ -15,3 +15,16 @@ b.onclick = () => {
     console.log(d1);
     c.innerHTML = d1;
 }
+
+///////////////////// вауууууууууууу
+function geo_mean(nums, arith_mean) {
+  let sum = 0;
+  let q = 1;
+  for(let i = 0; i<nums.length; i++){
+   sum += nums[i] 
+    q *= nums[i]
+  }
+  let n = arith_mean*(nums.length + 1) - sum;
+  let ar = Math.pow((q*n), 1/(nums.length + 1));
+  return ar
+}
