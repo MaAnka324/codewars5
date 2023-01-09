@@ -40,3 +40,31 @@ const rps = (p1, p2) => {
   if(p1 === "rock" && p2 === "paper") return "Player 2 won!"
   if(p1 === p2)return "Draw!"
 };
+
+
+//////////////////////
+var min = function(array){
+ for (let n=0; n < array.length; n++){
+        for (let i=0; i< array.length - 1 - n; i++){
+            if (array[i]>array[i+1]){
+                const buff = array[i];
+                array[i] = array[i+1];
+                array[i+1] = buff;
+            }
+        }
+    }
+    return array[0]
+}
+
+var max = function(array){
+ for (let n=0; n < array.length; n++){
+        for (let i=0; i< array.length - 1 - n; i++){
+            if (array[i]>array[i+1]){
+                const buff = array[i];
+                array[i] = array[i+1];
+                array[i+1] = buff;
+            }
+        }
+    }
+    return array[array.length-1]
+}
