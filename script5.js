@@ -68,3 +68,13 @@ var max = function(array){
     }
     return array[array.length-1]
 }
+
+
+///////////////////////////
+var isSquare = function(n){
+  let k = Math.sqrt(n)
+  if(Number.isInteger(k) == true){
+    return true
+  }
+  else return false
+}
